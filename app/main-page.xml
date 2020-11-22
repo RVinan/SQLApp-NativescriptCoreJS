@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+
+    
+
+    <StackLayout>
+        <TextField id="firstname" hint="First Name" text="{{ firstname }}" />
+        <TextField id="lastname" hint="Last Name" text="{{ lastname }}" />
+       
+        <StackLayout orientation="horizontal">
+            <Button text="Use DB" tap="{{ insert }}" />
+            <!--<Button text="Select" tap="{{ select }}" />-->
+        </StackLayout>
+        <ListView items="{{ arrayA }}">
+            <ListView.itemTemplate>
+                <Label text="{{ $value }}"/>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
